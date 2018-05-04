@@ -218,6 +218,11 @@
 			<groupId>org.apache.ctakes</groupId>
 			<artifactId>ctakes-temporal-res</artifactId>
 			<version>${ctakes.version}</version>
+		</dependency>
+         <dependency>
+			<groupId>org.apache.ctakes</groupId>
+			<artifactId>RaxaCtakes</artifactId>
+			<version>${ctakes.version}</version>
 		</dependency>		
 		<dependency>
 			<groupId>org.apache.uima</groupId>

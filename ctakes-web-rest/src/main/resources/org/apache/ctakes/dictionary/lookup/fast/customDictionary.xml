@@ -20,7 +20,7 @@ under the License.
 <lookupSpecification>
 <dictionaries>
    <dictionary>
-      <name>customDictionaryTerms</name>
+      <name>sno_rx_16abTerms</name>
       <implementationName>org.apache.ctakes.dictionary.lookup2.dictionary.JdbcRareWordDictionary</implementationName>
       <properties>
 <!-- urls for hsqldb memory connections must be file types in hsql 1.8.
@@ -29,10 +29,10 @@ They cannot be based upon the classpath.
 Though JdbcConnectionFactory will attempt to "find" a db based upon the parent dir of the url
 for the sake of ide ease-of-use, the user should be aware of these hsql limitations.
 -->
-         <property key="jdbcDriver" value="com.mysql.jdbc.Driver"/>
-         <property key="jdbcUrl" value="jdbc:mysql://192.168.112.225:3306/umls?useUnicode=true&amp;characterEncoding=utf8&amp;useSSL=false"/>
-         <property key="jdbcUser" value="root"/>
-         <property key="jdbcPass" value="admin123"/>
+         <property key="jdbcDriver" value="org.hsqldb.jdbcDriver"/>
+         <property key="jdbcUrl" value="jdbc:hsqldb:file:org/apache/ctakes/dictionary/lookup/fast/sno_rx_16ab/sno_rx_16ab"/>
+         <property key="jdbcUser" value="sa"/>
+         <property key="jdbcPass" value=""/>
          <property key="rareWordTable" value="cui_terms"/>
          <property key="umlsUrl" value="https://uts-ws.nlm.nih.gov/restful/isValidUMLSUser"/>
          <property key="umlsVendor" value="NLM-6515182895"/>
@@ -44,13 +44,13 @@ for the sake of ide ease-of-use, the user should be aware of these hsql limitati
 
 <conceptFactories>
    <conceptFactory>
-      <name>customDictionaryConcepts</name>
+      <name>sno_rx_16abConcepts</name>
       <implementationName>org.apache.ctakes.dictionary.lookup2.concept.JdbcConceptFactory</implementationName>
       <properties>
-         <property key="jdbcDriver" value="com.mysql.jdbc.Driver"/>
-         <property key="jdbcUrl" value="jdbc:mysql://192.168.112.225:3306/umls?useUnicode=true&amp;characterEncoding=utf8&amp;useSSL=false"/>
-         <property key="jdbcUser" value="root"/>
-         <property key="jdbcPass" value="admin123"/>
+         <property key="jdbcDriver" value="org.hsqldb.jdbcDriver"/>
+         <property key="jdbcUrl" value="jdbc:hsqldb:file:org/apache/ctakes/dictionary/lookup/fast/sno_rx_16ab/sno_rx_16ab"/>
+         <property key="jdbcUser" value="sa"/>
+         <property key="jdbcPass" value=""/>
          <property key="umlsUrl" value="https://uts-ws.nlm.nih.gov/restful/isValidUMLSUser"/>
          <property key="umlsVendor" value="NLM-6515182895"/>
          <property key="umlsUser" value="CHANGE_ME"/>
@@ -62,7 +62,6 @@ Uncommenting these lines alone may not persist term information;
 persistence depends upon the TermConsumer.  -->
          <property key="rxnormTable" value="long"/>
          <property key="snomedct_usTable" value="long"/>
-         <property key="mdrTable" value="long"/>
       </properties>
    </conceptFactory>
 </conceptFactories>
@@ -70,9 +69,9 @@ persistence depends upon the TermConsumer.  -->
 <!--  Defines what terms and concepts will be used  -->
 <dictionaryConceptPairs>
    <dictionaryConceptPair>
-      <name>customDictionaryPair</name>
-      <dictionaryName>customDictionaryTerms</dictionaryName>
-      <conceptFactoryName>customDictionaryConcepts</conceptFactoryName>
+      <name>sno_rx_16abPair</name>
+      <dictionaryName>sno_rx_16abTerms</dictionaryName>
+      <conceptFactoryName>sno_rx_16abConcepts</conceptFactoryName>
    </dictionaryConceptPair>
 </dictionaryConceptPairs>
 
@@ -88,7 +87,7 @@ and (just in case) removes any s/s and d/d that are also (exactly) anatomical si
    <properties>
 <!-- Depending upon the consumer, the value of codingScheme may or may not be used.  With the packaged consumers,
 codingScheme is a default value used only for cuis that do not have secondary codes (snomed, rxnorm, etc.)  -->
-         <property key="codingScheme" value="customDictionary"/>
+         <property key="codingScheme" value="sno_rx_16ab"/>
    </properties>
 </rareWordConsumer>
 

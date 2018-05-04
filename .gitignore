@@ -1,2 +1,4 @@
 tomcat
 trunk
+/ctakes-web-rest/target/
+.DS_Store

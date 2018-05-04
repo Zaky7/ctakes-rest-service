@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="ctakes-nlp-service">
+        <wb-resource deploy-path="/" source-path="/target/m2e-wtp/web-resources"/>
+        <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
+        <dependent-module archiveName="ctakes-type-system-4.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/ctakes-type-system/ctakes-type-system">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ctakes-utils-4.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/ctakes-utils/ctakes-utils">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ctakes-core-4.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/ctakes-core/ctakes-core">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ctakes-core-res-4.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/ctakes-core-res/ctakes-core-res">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ctakes-dictionary-lookup-4.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/ctakes-dictionary-lookup/ctakes-dictionary-lookup">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ctakes-dictionary-lookup-res-4.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/ctakes-dictionary-lookup-res/ctakes-dictionary-lookup-res">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ctakes-dictionary-lookup-fast-4.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/ctakes-dictionary-lookup-fast/ctakes-dictionary-lookup-fast">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ctakes-dictionary-lookup-fast-res-4.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/ctakes-dictionary-lookup-fast-res/ctakes-dictionary-lookup-fast-res">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ctakes-preprocessor-4.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/ctakes-preprocessor/ctakes-preprocessor">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ctakes-pos-tagger-4.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/ctakes-pos-tagger/ctakes-pos-tagger">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ctakes-pos-tagger-res-4.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/ctakes-pos-tagger-res/ctakes-pos-tagger-res">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ctakes-chunker-4.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/ctakes-chunker/ctakes-chunker">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ctakes-chunker-res-4.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/ctakes-chunker-res/ctakes-chunker-res">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ctakes-lvg-4.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/ctakes-lvg/ctakes-lvg">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ctakes-lvg-res-4.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/ctakes-lvg-res/ctakes-lvg-res">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ctakes-context-tokenizer-4.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/ctakes-context-tokenizer/ctakes-context-tokenizer">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ctakes-clinical-pipeline-4.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/ctakes-clinical-pipeline/ctakes-clinical-pipeline">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ctakes-clinical-pipeline-res-4.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/ctakes-clinical-pipeline-res/ctakes-clinical-pipeline-res">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ctakes-ne-contexts-4.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/ctakes-ne-contexts/ctakes-ne-contexts">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ctakes-ne-contexts-res-4.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/ctakes-ne-contexts-res/ctakes-ne-contexts-res">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ctakes-assertion-res-4.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/ctakes-assertion-res/ctakes-assertion-res">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ctakes-assertion-zoner-4.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/ctakes-assertion-zoner/ctakes-assertion-zoner">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ctakes-assertion-zoner-res-4.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/ctakes-assertion-zoner-res/ctakes-assertion-zoner-res">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ctakes-constituency-parser-4.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/ctakes-constituency-parser/ctakes-constituency-parser">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ctakes-constituency-parser-res-4.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/ctakes-constituency-parser-res/ctakes-constituency-parser-res">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ctakes-coreference-4.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/ctakes-coreference/ctakes-coreference">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ctakes-coreference-res-4.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/ctakes-coreference-res/ctakes-coreference-res">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ctakes-drug-ner-4.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/ctakes-drug-ner/ctakes-drug-ner">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ctakes-drug-ner-res-4.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/ctakes-drug-ner-res/ctakes-drug-ner-res">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ctakes-side-effect-4.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/ctakes-side-effect/ctakes-side-effect">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ctakes-side-effect-res-4.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/ctakes-side-effect-res/ctakes-side-effect-res">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ctakes-smoking-status-4.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/ctakes-smoking-status/ctakes-smoking-status">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ctakes-smoking-status-res-4.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/ctakes-smoking-status-res/ctakes-smoking-status-res">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ctakes-dependency-parser-4.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/ctakes-dependency-parser/ctakes-dependency-parser">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ctakes-dependency-parser-res-4.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/ctakes-dependency-parser-res/ctakes-dependency-parser-res">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ctakes-relation-extractor-4.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/ctakes-relation-extractor/ctakes-relation-extractor">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ctakes-relation-extractor-res-4.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/ctakes-relation-extractor-res/ctakes-relation-extractor-res">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ctakes-temporal-4.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/ctakes-temporal/ctakes-temporal">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ctakes-temporal-res-4.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/ctakes-temporal-res/ctakes-temporal-res">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="context-root" value="ctakes-nlp-service"/>
+        <property name="java-output-path" value="/ctakes-rest-service_ctakes-rest-service/target/classes"/>
+    </wb-module>
+</project-modules>
