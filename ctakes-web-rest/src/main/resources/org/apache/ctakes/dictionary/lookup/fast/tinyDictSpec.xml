@@ -7,9 +7,9 @@
                     <implementationName>org.apache.ctakes.dictionary.lookup2.dictionary.UmlsJdbcRareWordDictionary</implementationName>
                     <properties>
                        <property key="jdbcDriver" value="com.mysql.jdbc.Driver"/>
-                      <property key="jdbcUrl" value="jdbc:mysql://raxa-new-production.cvgs1e008nbr.ap-southeast-1.rds.amazonaws.com:3306/aiunstructured?useUnicode=true&amp;characterEncoding=utf8&amp;useSSL=false&amp;autoReconnect=true"/>
-                      <property key="jdbcUser" value="AI_Unstructured"/>
-                      <property key="jdbcPass" value="CwOKtwBNvRrQSVum"/>
+                       <property key="jdbcUrl" value="jdbc:mysql://localhost:3306/aiunstructured?useUnicode=true&amp;characterEncoding=utf8&amp;useSSL=false&amp;autoReconnect=true"/>
+                        <property key="jdbcUser" value="root"/>
+                        <property key="jdbcPass" value="qwas"/>
                        <property key="umlsUrl" value="https://uts-ws.nlm.nih.gov/restful/isValidUMLSUser"/>
                        <property key="umlsVendor" value="NLM-6515182895"/>
                        <property key="umlsUser" value="nundys"/>
@@ -25,9 +25,9 @@
                     <implementationName>org.apache.ctakes.dictionary.lookup2.concept.UmlsJdbcConceptFactory</implementationName>
                     <properties>
                         <property key="jdbcDriver" value="com.mysql.jdbc.Driver"/>
-                        <property key="jdbcUrl" value="jdbc:mysql://raxa-new-production.cvgs1e008nbr.ap-southeast-1.rds.amazonaws.com:3306/aiunstructured?useUnicode=true&amp;characterEncoding=utf8&amp;useSSL=false&amp;autoReconnect=true"/>
-                        <property key="jdbcUser" value="AI_Unstructured"/>
-                        <property key="jdbcPass" value="CwOKtwBNvRrQSVum"/>
+                         <property key="jdbcUrl" value="jdbc:mysql://localhost:3306/aiunstructured?useUnicode=true&amp;characterEncoding=utf8&amp;useSSL=false&amp;autoReconnect=true"/>
+                        <property key="jdbcUser" value="root"/>
+                        <property key="jdbcPass" value="qwas"/>
                         <property key="umlsUrl" value="https://uts-ws.nlm.nih.gov/restful/isValidUMLSUser"/>
                         <property key="umlsVendor" value="NLM-6515182895"/>
                         <property key="umlsUser" value="nundys"/>

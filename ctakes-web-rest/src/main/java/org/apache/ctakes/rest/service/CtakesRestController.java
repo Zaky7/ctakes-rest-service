@@ -154,7 +154,7 @@ public class CtakesRestController {
         }
         
         
-        
+        //Zakir Change
         //TemporalList      
         System.out.println("Extracting  temporalTextRelations from results");
         ArrayList<TemporalTextRelation> temporalTextRelations = new ArrayList<TemporalTextRelation>(JCasUtil.select(jcas, TemporalTextRelation.class));
