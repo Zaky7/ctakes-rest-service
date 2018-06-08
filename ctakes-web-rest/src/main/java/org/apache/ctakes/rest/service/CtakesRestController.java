@@ -142,13 +142,16 @@ public class CtakesRestController {
             }else{
                 labMentionJsonObject.put("value", new ArrayList());
             }
-
+            
             final Collection<UmlsConcept> umlsConcepts = OntologyConceptUtil.getUmlsConcepts(labMention);
             
             for(UmlsConcept umlsConcept : umlsConcepts) {
                 final String cui = umlsConcept.getCui();
                 labMentionJsonObject.put("cui", cui);
             }
+            
+            labMentionJsonObject.put("startIndex", labMention.getBegin());
+            labMentionJsonObject.put("endIndex", (labMention.getEnd() - 1));
             
             labValueMentionList.add(labMentionJsonObject.toString());
         }
