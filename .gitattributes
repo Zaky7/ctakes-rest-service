@@ -1,0 +1,1 @@
+src/main/resources/org/apache/ctakes/dictionary/lookup/fast/sno_rx_16ab/sno_rx_16ab.script filter=lfs diff=lfs merge=lfs -text
