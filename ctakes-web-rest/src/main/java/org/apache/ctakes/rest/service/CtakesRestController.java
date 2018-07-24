@@ -143,6 +143,19 @@ public class CtakesRestController {
                 labMentionJsonObject.put("value", new ArrayList());
             }
             
+            labMentionJsonObject.put("startIndex", labMention.getBegin());
+            labMentionJsonObject.put("endIndex", (labMention.getEnd() - 1));
+            
+            final Collection<UmlsConcept> umlsConcepts = OntologyConceptUtil.getUmlsConcepts(labMention);
+            
+            for(UmlsConcept umlsConcept : umlsConcepts) {
+                final String cui = umlsConcept.getCui();
+                labMentionJsonObject.put("cui", cui);
+                labValueMentionList.add(labMentionJsonObject.toString());
+                System.out.println("ALL CUI ADDED");
+            }
+
+            /*
             final Collection<UmlsConcept> umlsConcepts = OntologyConceptUtil.getUmlsConcepts(labMention);
             
             for(UmlsConcept umlsConcept : umlsConcepts) {
@@ -154,6 +167,7 @@ public class CtakesRestController {
             labMentionJsonObject.put("endIndex", (labMention.getEnd() - 1));
             
             labValueMentionList.add(labMentionJsonObject.toString());
+            */
         }
         
         
